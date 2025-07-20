@@ -3,7 +3,7 @@ from datetime import datetime, timedelta
 from cleaning import *
 from ratings import calculate_trueskill_ratings, filter_by_last_played
 
-df = pd.read_csv("data/2025-03-01.csv", skiprows=1)
+df = pd.read_csv("data/2025-07-20.csv", skiprows=1)
 
 df = drop_non_tournament_rows(df)
 df = drop_profit_columns(df)
